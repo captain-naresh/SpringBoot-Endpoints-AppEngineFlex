@@ -11,7 +11,7 @@ It is developed in springBoot, Java 8 runtime and is deployed on Google App Engi
 Steps to Configure the Running app- 
 
 Step 1 - Deploy Open API configuration(Swagger File) on Service Management(GCP).
-Step 2 - Deploy the Spring Boot Api code on the App Engine Flex Environment.
+Step 2 - Deploy the Spring Boot Api code on the App Engine Flex Environment See the app.yaml file under appengine folder which is important when deploying on the App engine App.yaml file having endpoints_api_service tag which will be connected to endpoint service for monitoring and graphs.
 Step 3 - See the graphs and monitoring page for the App enigne Flex App.
 
 
@@ -24,6 +24,9 @@ Step 2 - Update the pom.xml according to the above file, and deploy the code fir
           mvn spring-boot:run
           
         Visit http://localhost:8080 for check the greet message.
+        
+        
+        App.yaml file -- endpoints_api_service: tag
         
 Step 3 - Now Deploy the code on App Engine Flex via the cmd - 
 
